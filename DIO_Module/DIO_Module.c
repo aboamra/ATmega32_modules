@@ -81,8 +81,7 @@ void DIO_Init_Port(uint8_t PORT_NAME, uint8_t PORT_VALUE)
 void DIO_Init_Port_bit(uint8_t PORT_NAME,uint8_t PIN_NAME,uint8_t PIN_VALUE)
 	// PORT_NAME ( A|a|B|b|C|c|D|d ), PIN_NAME ( 0|1|2|3|4|5|6|7 ), PIN_VALUE ( I=INPUT , O=OUTPUT )
 {
-	//unsigned char MASK_BIT = 0x01;
-
+	
 	MASK_BIT = ( 0x01 << PIN_NAME );		//choose the required pin & store it to MASK_BIT
 
 	switch(PORT_NAME)
